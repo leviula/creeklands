@@ -5,7 +5,6 @@ using System.Collections;
 public class AutoCarousel : MonoBehaviour
 {
     public ScrollRect scrollRect;
-    public int numberOfPages = 3;
     public float timeBetweenPages = 3f;
     public float slideSpeed = 2f;
 
@@ -15,10 +14,19 @@ public class AutoCarousel : MonoBehaviour
 
     private int currentPage = 0;
 
+    private int NumberOfPages
+    {
+        get { return dots.Length; }
+    }
+
     void Start()
     {
         UpdateDots();
-        StartCoroutine(AutoSlide());
+
+        if (NumberOfPages > 1)
+        {
+            StartCoroutine(AutoSlide());
+        }
     }
 
     void UpdateDots()
@@ -40,27 +48,32 @@ public class AutoCarousel : MonoBehaviour
 
             currentPage++;
 
-            if (currentPage >= numberOfPages)
+            if (currentPage >= NumberOfPages)
+            {
                 currentPage = 0;
-
-            UpdateDots();
+            }
 
             float target =
-                (float)currentPage / (numberOfPages - 1);
+                (float)currentPage / (NumberOfPages - 1);
 
             while (
-                Mathf.Abs(scrollRect.horizontalNormalizedPosition - target) > 0.001f)
+                Mathf.Abs(
+                    scrollRect.horizontalNormalizedPosition - target
+                ) > 0.001f)
             {
                 scrollRect.horizontalNormalizedPosition =
                     Mathf.Lerp(
                         scrollRect.horizontalNormalizedPosition,
                         target,
-                        slideSpeed * Time.deltaTime);
+                        slideSpeed * Time.deltaTime
+                    );
 
                 yield return null;
             }
 
             scrollRect.horizontalNormalizedPosition = target;
+
+            UpdateDots();
         }
     }
 }
