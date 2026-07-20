@@ -20,15 +20,12 @@ public class ImageTrackingManager : MonoBehaviour
 
     void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs args)
     {
-        foreach (var trackedImage in args.added)
-        {
-            if (trackedImage.referenceImage.name == "IMG_6009")
-            {
-                spawnedObject = Instantiate(
-                    prefab,
-                    trackedImage.transform.position,
-                    trackedImage.transform.rotation);
-            }
+        foreach (var trackedImage in args.added){
+            spawnedObject = Instantiate(
+                prefab,
+                trackedImage.transform.position,
+                trackedImage.transform.rotation
+            );
         }
     }
 }

@@ -1906,7 +1906,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1402775916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7458a74db260406b87c9d1c00dc57c0, type: 3}
+  m_Script: {fileID: 11500000, guid: bbd3e2d1983c1451484d1c70b4ea60b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ImageTrackingManager
   trackedImageManager: {fileID: 2137110215}
