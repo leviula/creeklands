@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 83422861}
   - component: {fileID: 83422863}
   - component: {fileID: 83422862}
+  - component: {fileID: 83422864}
   m_Layer: 5
   m_Name: Skip Button
   m_TagString: Untagged
@@ -185,6 +186,50 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &83422864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83422860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &95827441
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +243,7 @@ GameObject:
   - component: {fileID: 95827444}
   - component: {fileID: 95827443}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Title Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -355,7 +400,7 @@ GameObject:
   - component: {fileID: 100195345}
   - component: {fileID: 100195344}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Dialog (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -950,7 +995,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 248318158}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 753652448}
+        m_TargetAssemblyTypeName: PageManager, Assembly-CSharp
+        m_MethodName: NextPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &248318158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1282,6 +1339,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695003831}
   m_CullTransparentMesh: 1
+--- !u!1 &753652446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 753652447}
+  - component: {fileID: 753652448}
+  m_Layer: 5
+  m_Name: PageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &753652447
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753652446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1912587568}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &753652448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753652446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe7bb68e19b2430b8122b072ddbbf4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  titleText: {fileID: 95827444}
+  descriptionText: {fileID: 100195344}
+  image: {fileID: 0}
+  button: {fileID: 83422864}
+  pages:
+  - chapterNumber: 0
+    title: Tutorial
+    description: "Welcome to Meet The Creek! Let\u2019s explore some of the tools
+      you\u2019ll use to complete your adventures. "
+    image: {fileID: 0}
+    showButton: 1
+  - chapterNumber: 0
+    title: Tutorial
+    description: The task bar will show your current task and your progress in each
+      quest! You can tap to expand the task bar and view more.
+    image: {fileID: 0}
+    showButton: 1
+  - chapterNumber: 0
+    title: Tutorial
+    description: The field journal will record all badges earned through each quest,
+      as well as the wildlife you interact with. You can learn more about a specific
+      animal or plant here!
+    image: {fileID: 0}
+    showButton: 1
+  - chapterNumber: 0
+    title: Tutorial
+    description: "The map shows your current location along the creek. It also tracks
+      which quests you\u2019ve completed, and where you can find new ones."
+    image: {fileID: 0}
+    showButton: 1
+  - chapterNumber: 0
+    title: Tutorial
+    description: "Use your camera to look around and interact with the creek\u2019s
+      species. Let\u2019s see if you can find a creek creature!"
+    image: {fileID: 0}
+    showButton: 0
+  - chapterNumber: 0
+    title: Tutorial
+    description: 'Task: Find a creek creature'
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    showButton: 0
+  - chapterNumber: 0
+    title: Tutorial
+    description: Let's take a look! Tap the field journal icon.
+    image: {fileID: 0}
+    showButton: 0
 --- !u!1 &807857220
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,7 +2345,7 @@ GameObject:
   - component: {fileID: 1499399108}
   - component: {fileID: 1499399107}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Skip Button Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2821,6 +2972,7 @@ RectTransform:
   m_Children:
   - {fileID: 1705379333}
   - {fileID: 297847299}
+  - {fileID: 753652447}
   m_Father: {fileID: 215451339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2931,7 +3083,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1947580813}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 753652448}
+        m_TargetAssemblyTypeName: PageManager, Assembly-CSharp
+        m_MethodName: PreviousPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1947580813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3122,7 +3286,7 @@ GameObject:
   - component: {fileID: 2046296049}
   - component: {fileID: 2046296048}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Back Button Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3573,7 +3737,7 @@ GameObject:
   - component: {fileID: 2117942426}
   - component: {fileID: 2117942425}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Next Button Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
