@@ -1390,49 +1390,49 @@ MonoBehaviour:
   titleText: {fileID: 95827444}
   descriptionText: {fileID: 100195344}
   image: {fileID: 0}
-  button: {fileID: 83422864}
+  button: {fileID: 1947580812}
   pages:
   - chapterNumber: 0
+    pageType: 0
     title: Tutorial
     description: "Welcome to Meet The Creek! Let\u2019s explore some of the tools
       you\u2019ll use to complete your adventures. "
     image: {fileID: 0}
-    showButton: 1
   - chapterNumber: 0
+    pageType: 0
     title: Tutorial
     description: The task bar will show your current task and your progress in each
       quest! You can tap to expand the task bar and view more.
     image: {fileID: 0}
-    showButton: 1
   - chapterNumber: 0
+    pageType: 0
     title: Tutorial
     description: The field journal will record all badges earned through each quest,
       as well as the wildlife you interact with. You can learn more about a specific
       animal or plant here!
     image: {fileID: 0}
-    showButton: 1
   - chapterNumber: 0
+    pageType: 0
     title: Tutorial
     description: "The map shows your current location along the creek. It also tracks
       which quests you\u2019ve completed, and where you can find new ones."
     image: {fileID: 0}
-    showButton: 1
   - chapterNumber: 0
+    pageType: 0
     title: Tutorial
     description: "Use your camera to look around and interact with the creek\u2019s
       species. Let\u2019s see if you can find a creek creature!"
     image: {fileID: 0}
-    showButton: 0
   - chapterNumber: 0
+    pageType: 0
     title: Tutorial
     description: 'Task: Find a creek creature'
     image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
-    showButton: 0
   - chapterNumber: 0
+    pageType: 0
     title: Tutorial
     description: Let's take a look! Tap the field journal icon.
     image: {fileID: 0}
-    showButton: 0
 --- !u!1 &807857220
 GameObject:
   m_ObjectHideFlags: 0
