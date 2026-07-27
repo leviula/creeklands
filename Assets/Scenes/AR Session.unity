@@ -154,10 +154,10 @@ RectTransform:
   - {fileID: 493559640}
   m_Father: {fileID: 309349689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 460.42242, y: -25}
+  m_SizeDelta: {x: 920.84485, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35244035
 MonoBehaviour:
@@ -256,9 +256,9 @@ RectTransform:
   - {fileID: 1047141260}
   m_Father: {fileID: 1594248686}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 560.84485, y: -15}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &83422860
@@ -892,10 +892,10 @@ RectTransform:
   - {fileID: 910416149}
   m_Father: {fileID: 236245880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 460.42242, y: -1271.5305}
-  m_SizeDelta: {x: 820.84485, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178964533
 MonoBehaviour:
@@ -1135,7 +1135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &236245880
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1456,6 +1456,8 @@ GameObject:
   - component: {fileID: 309349689}
   - component: {fileID: 309349691}
   - component: {fileID: 309349690}
+  - component: {fileID: 309349693}
+  - component: {fileID: 309349692}
   m_Layer: 5
   m_Name: Bubble
   m_TagString: Untagged
@@ -1479,10 +1481,10 @@ RectTransform:
   - {fileID: 1617385809}
   m_Father: {fileID: 1453552679}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 460.42242, y: -1325}
+  m_SizeDelta: {x: 920.84485, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309349690
 MonoBehaviour:
@@ -1530,6 +1532,44 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &309349692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309349688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &309349693
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309349688}
+  m_CullTransparentMesh: 1
 --- !u!1 &419964571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,10 +1701,10 @@ RectTransform:
   - {fileID: 1308009004}
   m_Father: {fileID: 35244034}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 870.84485, y: -25}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &493559641
 MonoBehaviour:
@@ -1729,7 +1769,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 493559643}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 753652448}
+        m_TargetAssemblyTypeName: PageManager, Assembly-CSharp
+        m_MethodName: NextPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &493559643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1799,10 +1851,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 35244034}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 388.66245, y: -0}
+  m_SizeDelta: {x: 624.36487, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &544320009
 MonoBehaviour:
@@ -1834,6 +1886,8 @@ GameObject:
   m_Component:
   - component: {fileID: 652165325}
   - component: {fileID: 652165326}
+  - component: {fileID: 652165328}
+  - component: {fileID: 652165327}
   m_Layer: 5
   m_Name: Layout
   m_TagString: Untagged
@@ -1856,10 +1910,10 @@ RectTransform:
   - {fileID: 1791051235}
   m_Father: {fileID: 1453552679}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 460.42242, y: -600}
+  m_SizeDelta: {x: 920.84485, y: 1200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652165326
 MonoBehaviour:
@@ -1887,6 +1941,44 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &652165327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652165324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &652165328
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652165324}
+  m_CullTransparentMesh: 1
 --- !u!1 &694054882
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,10 +2111,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2083039094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -25}
-  m_SizeDelta: {x: 800, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &695003831
 GameObject:
@@ -2163,10 +2255,10 @@ RectTransform:
   - {fileID: 1984715973}
   m_Father: {fileID: 236245880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 460.42242, y: -1413.2653}
-  m_SizeDelta: {x: 820.84485, y: 73.46938}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &719012873
 MonoBehaviour:
@@ -2211,7 +2303,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 719012874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 753652448}
+        m_TargetAssemblyTypeName: PageManager, Assembly-CSharp
+        m_MethodName: NextPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &719012874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2382,8 +2486,201 @@ MonoBehaviour:
   - chapterNumber: 0
     pageType: 0
     title: Tutorial
-    description: 'Task: Find a creek creature!'
+    description: "Let\u2019s take a look! Tap the field journal icon. "
+    image: {fileID: 0}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 0
+    pageType: 2
+    title: Cero
+    description: Nice to meet you visitor! I'm Cero the Great Blue Heron!
     image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: Native
+    label2: None
+    hideButton: 1
+  - chapterNumber: 0
+    pageType: 2
+    title: Cero
+    description: "There\u2019s so much to discover here, I can\u2019t wait for you
+      to to get to know my creek home!"
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 1
+    pageType: 2
+    title: Ripple
+    description: Hello visitor! I'm Ripple the red-legged frog.
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 1
+  - chapterNumber: 1
+    pageType: 2
+    title: Ripple
+    description: "Thank goodness you\u2019re here! There\u2019s been so much chaos
+      at the SLO creek, and I could use your help."
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 1
+    pageType: 2
+    title: Ripple
+    description: "Can you talk to the bullfrog and see what he\u2019s up to? I think
+      he\u2019s causing trouble..."
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 1
+    pageType: 2
+    title: American Bullfrog
+    description: "Ribbit ribbit.... I\u2019m feeling hungry..."
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 1
+  - chapterNumber: 1
+    pageType: 2
+    title: Ripple
+    description: "Watch out! He\u2019ll eat anything he can fit in his mouth! He\u2019s
+      been causing chaos all around the creek community."
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 1
+    pageType: 2
+    title: Cardinal Meadowhawk
+    description: Hello, yesterday, the bullfrog ate my friend!
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 1
+  - chapterNumber: 1
+    pageType: 2
+    title: Tricolored Blackbird
+    description: "That bullfrog will eat just about anything it can capture and swallow.
+      I even saw him try to eat a bird! I\u2019m very worried about my little nestlings!"
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 1
+  - chapterNumber: 1
+    pageType: 2
+    title: Ripple
+    description: "Oh no! Sounds like the bullfrog is an invasive species! Let\u2019s
+      report this sighting to the California Department of Fish and Wildlife so they
+      can take care of it."
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 1
+    pageType: 2
+    title: Ripple
+    description: 'Wow, thank you so much! You really helped the creek today. '
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 2
+    pageType: 2
+    title: Skipper
+    description: Hi there! I'm Skipper the Steelhead Trout!
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 1
+  - chapterNumber: 2
+    pageType: 2
+    title: Skipper
+    description: "I was born here in this creek, but now it\u2019s time for me to
+      head out and find food on my own."
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 2
+    pageType: 2
+    title: Skipper
+    description: "Help me swim through the creek and make my way to the ocean! There\u2019s
+      more food over there, so I can grow even bigger!"
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 2
+    pageType: 2
+    title: Skipper
+    description: Oh hey, look, this is a tule rush!
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    label1: 
+    label2: 
+    hideButton: 1
+  - chapterNumber: 2
+    pageType: 2
+    title: Skipper
+    description: "Let\u2019s take a look! Tap the field journal icon. "
+    image: {fileID: 0}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 0
+    pageType: 0
+    title: Tutorial
+    description: "Let\u2019s take a look! Tap the field journal icon. "
+    image: {fileID: 0}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 0
+    pageType: 0
+    title: Tutorial
+    description: "Let\u2019s take a look! Tap the field journal icon. "
+    image: {fileID: 0}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 0
+    pageType: 0
+    title: Tutorial
+    description: "Let\u2019s take a look! Tap the field journal icon. "
+    image: {fileID: 0}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 0
+    pageType: 0
+    title: Tutorial
+    description: "Let\u2019s take a look! Tap the field journal icon. "
+    image: {fileID: 0}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 0
+    pageType: 0
+    title: Tutorial
+    description: "Let\u2019s take a look! Tap the field journal icon. "
+    image: {fileID: 0}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 0
+    pageType: 0
+    title: Tutorial
+    description: "Let\u2019s take a look! Tap the field journal icon. "
+    image: {fileID: 0}
+    label1: 
+    label2: 
+    hideButton: 0
+  - chapterNumber: 0
+    pageType: 0
+    title: Tutorial
+    description: "Let\u2019s take a look! Tap the field journal icon. "
+    image: {fileID: 0}
     label1: 
     label2: 
     hideButton: 0
@@ -2557,10 +2854,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 178964532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 410.42242, y: -25}
-  m_SizeDelta: {x: 800, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &910416150
 MonoBehaviour:
@@ -3231,10 +3528,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 236245880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 460.42242, y: -573.26526}
-  m_SizeDelta: {x: 620.7755, y: 926.5306}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 460.42242, y: 0}
+  m_SizeDelta: {x: 620.7755, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1270387237
 MonoBehaviour:
@@ -3604,7 +3901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1453552679
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4204,9 +4501,9 @@ RectTransform:
   - {fileID: 1637370342}
   m_Father: {fileID: 1594248686}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 740.84485, y: -15}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515318852
@@ -4430,10 +4727,10 @@ RectTransform:
   - {fileID: 1515318851}
   m_Father: {fileID: 236245880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 460.42242, y: -15}
-  m_SizeDelta: {x: 820.84485, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1594248687
 MonoBehaviour:
@@ -4514,10 +4811,10 @@ RectTransform:
   - {fileID: 2116579821}
   m_Father: {fileID: 309349689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 460.42242, y: -150}
+  m_SizeDelta: {x: 920.84485, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1617385810
 MonoBehaviour:
@@ -4934,10 +5231,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 652165325}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 460.42242, y: 0}
-  m_SizeDelta: {x: 670, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 460.42242, y: -600}
+  m_SizeDelta: {x: 670, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1813687638
 GameObject:
@@ -5533,7 +5830,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1975824685}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 753652448}
+        m_TargetAssemblyTypeName: PageManager, Assembly-CSharp
+        m_MethodName: PreviousPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1975824685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5607,10 +5916,10 @@ RectTransform:
   - {fileID: 1204678323}
   m_Father: {fileID: 35244034}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 760.84485, y: -25}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1984715972
 GameObject:
@@ -5919,10 +6228,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 35244034}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 33.24, y: -20.11}
+  m_SizeDelta: {x: 66.48, y: 40.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2055654018
 MonoBehaviour:
@@ -5981,8 +6290,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6254,10 +6563,10 @@ RectTransform:
   - {fileID: 694054885}
   m_Father: {fileID: 236245880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 460.42242, y: -1141.5305}
-  m_SizeDelta: {x: 820.84485, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2083039095
 MonoBehaviour:
@@ -6475,10 +6784,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1617385809}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 73.45, y: -50}
+  m_SizeDelta: {x: 146.9, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2116579822
 MonoBehaviour:
@@ -6537,8 +6846,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
