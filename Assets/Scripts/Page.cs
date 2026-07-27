@@ -2,17 +2,15 @@ using UnityEngine;
 
 public enum PageType
 {
-    MainContent,
-    DifferentPage
+    StoryLayoutText,
+    CardLayout,
+    StoryLayoutImage
 }
 
 [System.Serializable]
-
 public class Page
 {
-    [Header("Page Information")]
-    public int chapterNumber = 0;
-
+    public int chapterNumber;
     public PageType pageType;
 
     [Header("Content")]
@@ -21,8 +19,12 @@ public class Page
     [TextArea(3, 10)]
     public string description;
 
-    [Header("Optional Content")]
     public Sprite image;
 
+    [Header("Card Content")]
+    public string label1;
+    public string label2;
+
+    [Header("Optional Content")]
     public bool hideButton;
 }
