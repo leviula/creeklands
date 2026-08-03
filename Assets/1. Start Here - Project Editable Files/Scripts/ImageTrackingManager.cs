@@ -4,9 +4,7 @@ using UnityEngine.XR.ARFoundation;
 public class ImageTrackingManager : MonoBehaviour
 {
     public ARTrackedImageManager trackedImageManager;
-    public GameObject prefab;
-
-    private GameObject spawnedObject;
+    public Transform CurrentTrackedImage { get; private set; }
 
     void OnEnable()
     {
@@ -21,11 +19,11 @@ public class ImageTrackingManager : MonoBehaviour
     void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs args)
     {
         foreach (var trackedImage in args.added){
-            spawnedObject = Instantiate(
-                prefab,
-                trackedImage.transform.position,
-                trackedImage.transform.rotation
-            );
+            CurrentTrackedImage = trackedImage.transform;
+        }
+        
+        foreach (var trackedImage in args.updated){
+            CurrentTrackedImage = trackedImage.transform;
         }
     }
 }

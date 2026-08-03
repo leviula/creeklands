@@ -4,12 +4,14 @@ using TMPro;
 
 public class PageManager : MonoBehaviour
 {
+    public ARObjectManager arObjectManager;
+    public ImageTrackingManager imageTrackingManager;
+
     [Header("Story Layout Text")]
     public TMP_Text storyTextTitle;
     public TMP_Text storyTextDescription;
     public Image storyTextImage;
     public Button storyTextButton;
-
 
     [Header("Card Layout")]
     public TMP_Text cardTitle;
@@ -19,12 +21,13 @@ public class PageManager : MonoBehaviour
     public TMP_Text cardLabel1;
     public TMP_Text cardLabel2;
 
-
     [Header("Story Layout Image")]
     public TMP_Text storyImageTitle;
     public TMP_Text storyImageDescription;
     public Image storyImage;
     public Button storyImageButton;
+
+    [Header("Blank")]
 
     [Header("Page Data")]
     public Page[] pages;
@@ -35,6 +38,11 @@ public class PageManager : MonoBehaviour
     public GameObject storyLayoutText;
     public GameObject cardLayout;
     public GameObject storyLayoutImage;
+
+    [Header("Testing")]
+    public bool useTestSpawnPoint = true;
+    public Transform testSpawnPoint;
+
     void Start()
     {
         UpdateUI();
@@ -49,8 +57,8 @@ public class PageManager : MonoBehaviour
         cardLayout.SetActive(false);
         storyLayoutImage.SetActive(false);
 
-
-        switch (page.pageType){
+        switch (page.pageType)
+        {
             case PageType.StoryLayoutText:
 
                 storyLayoutText.SetActive(true);
@@ -68,7 +76,6 @@ public class PageManager : MonoBehaviour
                 storyTextButton.gameObject.SetActive(!page.hideButton);
 
                 break;
-
 
             case PageType.CardLayout:
 
@@ -91,7 +98,6 @@ public class PageManager : MonoBehaviour
 
                 break;
 
-
             case PageType.StoryLayoutImage:
 
                 storyLayoutImage.SetActive(true);
@@ -109,6 +115,33 @@ public class PageManager : MonoBehaviour
                 storyImageButton.gameObject.SetActive(!page.hideButton);
 
                 break;
+
+            case PageType.Blank:
+
+                break;
+        }
+
+        // -------------------------
+        // Spawn AR Objects
+        // -------------------------
+
+        Transform spawnPoint = imageTrackingManager.CurrentTrackedImage;
+
+        if (spawnPoint == null && useTestSpawnPoint)
+        {
+            spawnPoint = testSpawnPoint;
+        }
+
+        if (spawnPoint != null)
+        {
+            arObjectManager.ShowPrefabs(
+            page.objectsToSpawn,
+            spawnPoint
+        );
+        }
+        else
+        {
+            arObjectManager.HidePrefabs();
         }
     }
 
