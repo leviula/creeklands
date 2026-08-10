@@ -185,6 +185,11 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &70031088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1267951208097970301, guid: 553b485ab48c84a30a40a1ad8fa285a9, type: 3}
+  m_PrefabInstance: {fileID: 8732303122969638801}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &70654021
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,37 +864,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &170896411
+--- !u!1 &170896411 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3410784497459952717, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+  m_PrefabInstance: {fileID: 2133585688108507878}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 170896412}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &170896412
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170896411}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21498, y: 0.0308, z: 14.978}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &178964531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,6 +1139,8 @@ GameObject:
   - component: {fileID: 236245880}
   - component: {fileID: 236245883}
   - component: {fileID: 236245882}
+  - component: {fileID: 236245885}
+  - component: {fileID: 236245884}
   m_Layer: 5
   m_Name: CardLayout
   m_TagString: Untagged
@@ -1180,7 +1161,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1594248686}
-  - {fileID: 1270387235}
+  - {fileID: 240796300}
   - {fileID: 2083039094}
   - {fileID: 178964532}
   - {fileID: 719012872}
@@ -1229,6 +1210,128 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &236245884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236245879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &236245885
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236245879}
+  m_CullTransparentMesh: 1
+--- !u!1 &240796299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 240796300}
+  - component: {fileID: 240796302}
+  - component: {fileID: 240796301}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &240796300
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240796299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1270387235}
+  m_Father: {fileID: 236245880}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &240796301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240796299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_Padding:
+    m_Left: 100
+    m_Right: 100
+    m_Top: 100
+    m_Bottom: 100
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &240796302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240796299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: 100
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: 1
+  m_LayoutPriority: 1
 --- !u!1 &248318154
 GameObject:
   m_ObjectHideFlags: 0
@@ -2102,8 +2205,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2524,7 +2627,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 0
     pageType: 0
     title: Tutorial
@@ -2534,7 +2637,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 0
     pageType: 0
     title: Tutorial
@@ -2545,7 +2648,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 0
     pageType: 0
     title: Tutorial
@@ -2555,7 +2658,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 0
     pageType: 0
     title: Tutorial
@@ -2565,7 +2668,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 0
     pageType: 3
     title: 
@@ -2574,8 +2677,20 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn:
-    - {fileID: 232121333}
+    objectsToSpawn:
+    - prefab: {fileID: 232121333}
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+  - chapterNumber: 0
+    pageType: 1
+    title: Cero the Great Blue Heron
+    description: 'Scientific Name: Ardea herodias'
+    image: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
+    hideButton: 0
+    label1: 
+    label2: 
+    objectsToSpawn: []
   - chapterNumber: 0
     pageType: 0
     title: Tutorial
@@ -2584,7 +2699,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 0
     pageType: 2
     title: Cero
@@ -2593,7 +2708,7 @@ MonoBehaviour:
     hideButton: 1
     label1: Native
     label2: None
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 0
     pageType: 2
     title: Cero
@@ -2603,7 +2718,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 1
     pageType: 3
     title: 
@@ -2612,8 +2727,20 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn:
-    - {fileID: 1895430487}
+    objectsToSpawn:
+    - prefab: {fileID: 1895430487}
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+  - chapterNumber: 1
+    pageType: 1
+    title: Ripple the Red-Legged Frog
+    description: 'Scientific Name: Rana draytonii'
+    image: {fileID: 21300000, guid: 0768d2850e753496199ff16ff8e10805, type: 3}
+    hideButton: 0
+    label1: 
+    label2: 
+    objectsToSpawn: []
   - chapterNumber: 1
     pageType: 2
     title: Ripple
@@ -2622,7 +2749,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 1
     pageType: 2
     title: Ripple
@@ -2632,7 +2759,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 1
     pageType: 2
     title: Ripple
@@ -2642,7 +2769,29 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
+  - chapterNumber: 1
+    pageType: 3
+    title: 
+    description: 
+    image: {fileID: 0}
+    hideButton: 1
+    label1: 
+    label2: 
+    objectsToSpawn:
+    - prefab: {fileID: 70031088}
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+  - chapterNumber: 1
+    pageType: 1
+    title: American Bullfrog
+    description: 'Scientific Name: Lithobates catesbeianus'
+    image: {fileID: 21300000, guid: e48b2f18edcaf4819bcebd9f73e8df70, type: 3}
+    hideButton: 0
+    label1: 
+    label2: 
+    objectsToSpawn: []
   - chapterNumber: 1
     pageType: 2
     title: American Bullfrog
@@ -2651,7 +2800,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 1
     pageType: 2
     title: Ripple
@@ -2661,7 +2810,29 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
+  - chapterNumber: 1
+    pageType: 3
+    title: 
+    description: 
+    image: {fileID: 0}
+    hideButton: 1
+    label1: 
+    label2: 
+    objectsToSpawn:
+    - prefab: {fileID: 777496934}
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+  - chapterNumber: 1
+    pageType: 1
+    title: Cardinal Meadowhawk
+    description: 'Scientific Name: Sympetrum illotum'
+    image: {fileID: 21300000, guid: 984316be97ff042b4a7ba10151d41c40, type: 3}
+    hideButton: 0
+    label1: Local
+    label2: Native
+    objectsToSpawn: []
   - chapterNumber: 1
     pageType: 2
     title: Cardinal Meadowhawk
@@ -2670,7 +2841,29 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
+  - chapterNumber: 1
+    pageType: 3
+    title: 
+    description: 
+    image: {fileID: 0}
+    hideButton: 1
+    label1: 
+    label2: 
+    objectsToSpawn:
+    - prefab: {fileID: 170896411}
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+  - chapterNumber: 1
+    pageType: 1
+    title: Tricolored Blackbird
+    description: 'Scientific Name: Agelaius tricolor'
+    image: {fileID: 21300000, guid: 0834fe0e596e74d249297272fc137a3d, type: 3}
+    hideButton: 0
+    label1: Local
+    label2: Native
+    objectsToSpawn: []
   - chapterNumber: 1
     pageType: 2
     title: Tricolored Blackbird
@@ -2680,7 +2873,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 1
     pageType: 2
     title: Ripple
@@ -2691,7 +2884,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 1
     pageType: 2
     title: Ripple
@@ -2700,7 +2893,29 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
+  - chapterNumber: 2
+    pageType: 3
+    title: 
+    description: 
+    image: {fileID: 0}
+    hideButton: 0
+    label1: 
+    label2: 
+    objectsToSpawn:
+    - prefab: {fileID: 1545827808168979390, guid: 01faab4898f144c888c04d10585c2dbb, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+  - chapterNumber: 2
+    pageType: 1
+    title: Skipper the Steelhead Trout
+    description: 'Scientific Name: Oncorhynchus mykiss'
+    image: {fileID: 21300000, guid: d3f5a2f27e2f9486a8bbb7e061bcd7e9, type: 3}
+    hideButton: 0
+    label1: Local
+    label2: Native
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Skipper
@@ -2709,7 +2924,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Skipper
@@ -2719,7 +2934,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Skipper
@@ -2729,7 +2944,16 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
+  - chapterNumber: 2
+    pageType: 1
+    title: Tule Rush
+    description: 'Scientific Name: Schoenoplectus acutus'
+    image: {fileID: 21300000, guid: eed66de1be41c4265865ca876ab1eaad, type: 3}
+    hideButton: 0
+    label1: Local
+    label2: Native
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Skipper
@@ -2738,7 +2962,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Skipper
@@ -2748,7 +2972,16 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
+  - chapterNumber: 2
+    pageType: 1
+    title: Mallard Duck
+    description: 'Scientific Name: Anas platyrhynchos'
+    image: {fileID: 21300000, guid: 0eec3219a2ffc4e4ba27fb6f546fb015, type: 3}
+    hideButton: 0
+    label1: Local
+    label2: Native
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Mallard Duck
@@ -2757,7 +2990,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Skipper
@@ -2767,7 +3000,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Mallard Duck
@@ -2777,7 +3010,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Skipper
@@ -2787,7 +3020,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Skipper
@@ -2796,7 +3029,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Skipper
@@ -2806,7 +3039,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 2
     pageType: 2
     title: Skipper
@@ -2816,7 +3049,29 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
+  - chapterNumber: 3
+    pageType: 3
+    title: 
+    description: 
+    image: {fileID: 0}
+    hideButton: 0
+    label1: 
+    label2: 
+    objectsToSpawn:
+    - prefab: {fileID: 1696659162}
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+  - chapterNumber: 3
+    pageType: 1
+    title: Mariposa the Monarch Butterfly
+    description: 'Scientific Name: Danaus plexippus'
+    image: {fileID: 21300000, guid: 8ee8fea619ada40e1a3648a542479384, type: 3}
+    hideButton: 0
+    label1: Local
+    label2: Native
+    objectsToSpawn: []
   - chapterNumber: 3
     pageType: 2
     title: Mariposa
@@ -2826,7 +3081,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 3
     pageType: 2
     title: Mariposa
@@ -2836,7 +3091,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 3
     pageType: 2
     title: Mariposa
@@ -2845,7 +3100,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 3
     pageType: 2
     title: Mariposa
@@ -2856,7 +3111,24 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
+  - chapterNumber: 3
+    pageType: 3
+    title: 
+    description: 
+    image: {fileID: 0}
+    hideButton: 0
+    label1: 
+    label2: 
+    objectsToSpawn:
+    - prefab: {fileID: 3279093614907120051, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+    - prefab: {fileID: 3279093614907120051, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      localPosition: {x: -0.01, y: -0.01, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
   - chapterNumber: 3
     pageType: 2
     title: Mariposa
@@ -2867,7 +3139,37 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
+  - chapterNumber: 3
+    pageType: 3
+    title: 
+    description: 
+    image: {fileID: 0}
+    hideButton: 1
+    label1: 
+    label2: 
+    objectsToSpawn:
+    - prefab: {fileID: 1825100599}
+      localPosition: {x: 0.05, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+    - prefab: {fileID: 1407839794}
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+    - prefab: {fileID: 1407839794}
+      localPosition: {x: -0.01, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+  - chapterNumber: 3
+    pageType: 1
+    title: Crotch's Bumble Bee
+    description: 'Scientific Name: Bombus crotchii'
+    image: {fileID: 21300000, guid: ae5160b7358d04561991d378d5f20f3a, type: 3}
+    hideButton: 0
+    label1: Native
+    label2: 
+    objectsToSpawn: []
   - chapterNumber: 3
     pageType: 2
     title: "Crotch\u2019s Bumble Bee"
@@ -2876,7 +3178,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 3
     pageType: 2
     title: Mariposa
@@ -2886,7 +3188,37 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
+  - chapterNumber: 3
+    pageType: 3
+    title: 
+    description: 
+    image: {fileID: 0}
+    hideButton: 0
+    label1: 
+    label2: 
+    objectsToSpawn:
+    - prefab: {fileID: 5822027376423130221, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      localPosition: {x: 0, y: 0.03, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+    - prefab: {fileID: 1407839794}
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+    - prefab: {fileID: 1407839794}
+      localPosition: {x: 0.01, y: 0.01, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+  - chapterNumber: 3
+    pageType: 1
+    title: "Anna the Anna\u2019s Hummingbird"
+    description: 'Scientific Name: Calypte anna'
+    image: {fileID: 21300000, guid: a43baffc3c5a64fd5b69f21812eba1ff, type: 3}
+    hideButton: 0
+    label1: Local
+    label2: Native
+    objectsToSpawn: []
   - chapterNumber: 3
     pageType: 2
     title: "Anna\u2019s Hummingbird"
@@ -2895,7 +3227,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 3
     pageType: 2
     title: Mariposa
@@ -2906,7 +3238,29 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
+  - chapterNumber: 4
+    pageType: 3
+    title: 
+    description: 
+    image: {fileID: 0}
+    hideButton: 0
+    label1: 
+    label2: 
+    objectsToSpawn:
+    - prefab: {fileID: 3410784497459952717, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      localPosition: {x: 0, y: 0, z: 0}
+      localRotation: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.01, y: 0.01, z: 0.01}
+  - chapterNumber: 4
+    pageType: 1
+    title: Bingo the Belted Kingfisher
+    description: 'Scientific Name: Megaceryle alcyon'
+    image: {fileID: 21300000, guid: 3d8d25b0401174b859ffa351c6dca9e2, type: 3}
+    hideButton: 0
+    label1: Local
+    label2: Native
+    objectsToSpawn: []
   - chapterNumber: 4
     pageType: 2
     title: Bingo
@@ -2915,7 +3269,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 4
     pageType: 2
     title: Bingo
@@ -2925,7 +3279,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 4
     pageType: 2
     title: Bingo
@@ -2935,7 +3289,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 4
     pageType: 2
     title: Bingo
@@ -2945,7 +3299,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 4
     pageType: 2
     title: Bingo
@@ -2955,7 +3309,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 4
     pageType: 2
     title: Bingo
@@ -2965,7 +3319,7 @@ MonoBehaviour:
     hideButton: 1
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 4
     pageType: 2
     title: Bingo
@@ -2975,7 +3329,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 4
     pageType: 2
     title: Bingo
@@ -2985,7 +3339,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 4
     pageType: 2
     title: Bingo
@@ -2995,7 +3349,7 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   - chapterNumber: 4
     pageType: 2
     title: Bingo
@@ -3005,12 +3359,17 @@ MonoBehaviour:
     hideButton: 0
     label1: 
     label2: 
-    prefabsToSpawn: []
+    objectsToSpawn: []
   storyLayoutText: {fileID: 297847298}
   cardLayout: {fileID: 236245879}
   storyLayoutImage: {fileID: 1453552678}
   useTestSpawnPoint: 1
   testSpawnPoint: {fileID: 1584412337}
+--- !u!1 &777496934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1921074151604031541, guid: b4b3161b3e4704fbb8e073190bcd2503, type: 3}
+  m_PrefabInstance: {fileID: 6841654824401537429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &807857220
 GameObject:
   m_ObjectHideFlags: 0
@@ -3248,8 +3607,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3886,12 +4245,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 236245880}
+  m_Father: {fileID: 240796300}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 409.49573, y: 0}
-  m_SizeDelta: {x: 620.7755, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1270387237
 MonoBehaviour:
@@ -3915,7 +4274,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: b8535b9a16c1a40399ccbccb86b0c62b, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3938,7 +4297,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270387234}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
   m_Name: 
@@ -3947,7 +4306,7 @@ MonoBehaviour:
   m_MinWidth: -1
   m_MinHeight: 100
   m_PreferredWidth: -1
-  m_PreferredHeight: 1000
+  m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: 1
   m_LayoutPriority: 1
@@ -3958,7 +4317,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270387234}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
   m_Name: 
@@ -4147,6 +4506,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ImageTrackingManager
   trackedImageManager: {fileID: 2137110215}
+--- !u!1 &1407839794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3279093614907120051, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+  m_PrefabInstance: {fileID: 623126523519994464}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1411052985
 GameObject:
   m_ObjectHideFlags: 0
@@ -5445,6 +5809,11 @@ MonoBehaviour:
   m_FlexibleWidth: 1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!1 &1696659162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3105647769000453234, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+  m_PrefabInstance: {fileID: 6394359279982218549}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1703068720
 GameObject:
   m_ObjectHideFlags: 0
@@ -5763,6 +6132,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1813687638}
   m_CullTransparentMesh: 1
+--- !u!1 &1825100599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4987957912689421798, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+  m_PrefabInstance: {fileID: 2228959379052095828}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1895430487 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1633233982493379652, guid: 32d3e6e824b9845229689e52af572425, type: 3}
@@ -7697,6 +8071,234 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143224308}
   m_CullTransparentMesh: 1
+--- !u!1001 &623126523519994464
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3279093614907120051, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_Name
+      value: Milkweed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024499832130373940, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.20527
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024499832130373940, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04877
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024499832130373940, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.938
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024499832130373940, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024499832130373940, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024499832130373940, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024499832130373940, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024499832130373940, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024499832130373940, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024499832130373940, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+--- !u!1001 &2133585688108507878
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1568614624281739644, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.21498
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568614624281739644, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0308
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568614624281739644, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.978
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568614624281739644, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568614624281739644, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568614624281739644, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568614624281739644, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568614624281739644, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568614624281739644, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568614624281739644, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410784497459952717, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_Name
+      value: Blackbird
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+--- !u!1001 &2228959379052095828
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4368692833008651893, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.20357
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368692833008651893, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05192
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368692833008651893, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.931
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368692833008651893, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368692833008651893, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368692833008651893, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368692833008651893, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368692833008651893, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368692833008651893, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368692833008651893, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987957912689421798, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_Name
+      value: Bee
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+--- !u!1001 &2622088715858050813
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5822027376423130221, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_Name
+      value: Hummingbird
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100508258769594126, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100508258769594126, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100508258769594126, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100508258769594126, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100508258769594126, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100508258769594126, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100508258769594126, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100508258769594126, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100508258769594126, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100508258769594126, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
 --- !u!1001 &4959986648439438092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7754,6 +8356,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd97c0a4a79784a1e9b6e2cd75e9ef10, type: 3}
+--- !u!1001 &6394359279982218549
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3105647769000453234, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_Name
+      value: Butterfly
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914126480828894993, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2128
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914126480828894993, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.03484
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914126480828894993, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.969
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914126480828894993, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914126480828894993, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914126480828894993, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914126480828894993, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914126480828894993, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914126480828894993, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914126480828894993, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
 --- !u!1001 &6841654824401537429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7943,4 +8602,8 @@ SceneRoots:
   - {fileID: 9102068776709510545}
   - {fileID: 8732303122969638801}
   - {fileID: 6841654824401537429}
-  - {fileID: 170896412}
+  - {fileID: 2133585688108507878}
+  - {fileID: 6394359279982218549}
+  - {fileID: 623126523519994464}
+  - {fileID: 2228959379052095828}
+  - {fileID: 2622088715858050813}
