@@ -7,6 +7,13 @@ public class PageManager : MonoBehaviour
     public ARObjectManager arObjectManager;
     public ImageTrackingManager imageTrackingManager;
 
+    [Header("2D Overlay")]
+    public TwoDOverlayManager twoDOverlayManager;
+
+    [Header("Trout")]
+    public RectTransform troutTransform;
+    public GameObject troutObject;
+
     [Header("Story Layout Text")]
     public TMP_Text storyTextTitle;
     public TMP_Text storyTextDescription;
@@ -43,19 +50,38 @@ public class PageManager : MonoBehaviour
     public bool useTestSpawnPoint = true;
     public Transform testSpawnPoint;
 
+
     void Start()
     {
         UpdateUI();
     }
 
+
     public void UpdateUI()
     {
         Page page = pages[currentPage];
+
+        troutObject.SetActive(page.showTrout);
+
+        if (page.showTrout)
+        {
+            troutTransform.anchoredPosition = page.troutPosition;
+            troutTransform.localRotation = Quaternion.Euler(0, 0, page.troutRotation);
+
+            Vector3 scale = troutTransform.localScale;
+            scale.x = page.flipTrout ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
+            troutTransform.localScale = scale;
+        }
+
+        // =========================================================
+        // NORMAL UI
+        // =========================================================
 
         // Hide all layouts
         storyLayoutText.SetActive(false);
         cardLayout.SetActive(false);
         storyLayoutImage.SetActive(false);
+
 
         switch (page.pageType)
         {
@@ -76,6 +102,7 @@ public class PageManager : MonoBehaviour
                 storyTextButton.gameObject.SetActive(!page.hideButton);
 
                 break;
+
 
             case PageType.CardLayout:
 
@@ -98,6 +125,7 @@ public class PageManager : MonoBehaviour
 
                 break;
 
+
             case PageType.StoryLayoutImage:
 
                 storyLayoutImage.SetActive(true);
@@ -116,14 +144,36 @@ public class PageManager : MonoBehaviour
 
                 break;
 
+
             case PageType.Blank:
 
                 break;
         }
 
-        // -------------------------
-        // Spawn AR Objects
-        // -------------------------
+
+        // =========================================================
+        // 2D OVERLAY
+        // =========================================================
+
+        if (twoDOverlayManager != null)
+        {
+            if (page.use2DOverlay && page.twoDBackground != null)
+            {
+                twoDOverlayManager.ShowOverlay(
+                    page.twoDBackground,
+                    page.show2DButton
+                );
+            }
+            else
+            {
+                twoDOverlayManager.HideOverlay();
+            }
+        }
+
+
+        // =========================================================
+        // AR OBJECTS
+        // =========================================================
 
         Transform spawnPoint = imageTrackingManager.CurrentTrackedImage;
 
@@ -135,9 +185,9 @@ public class PageManager : MonoBehaviour
         if (spawnPoint != null)
         {
             arObjectManager.ShowPrefabs(
-            page.objectsToSpawn,
-            spawnPoint
-        );
+                page.objectsToSpawn,
+                spawnPoint
+            );
         }
         else
         {
@@ -145,21 +195,44 @@ public class PageManager : MonoBehaviour
         }
     }
 
+
+    // =============================================================
+    // NORMAL PAGE BUTTON
+    // =============================================================
+
     public void NextPage()
     {
         if (currentPage < pages.Length - 1)
         {
             currentPage++;
+
             UpdateUI();
         }
     }
+
 
     public void PreviousPage()
     {
         if (currentPage > 0)
         {
             currentPage--;
+
             UpdateUI();
         }
+    }
+
+
+    // =============================================================
+    // 2D OVERLAY BUTTON
+    // =============================================================
+
+    public void Move2DBackground()
+    {
+        if (twoDOverlayManager == null)
+            return;
+
+        Page page = pages[currentPage];
+
+        twoDOverlayManager.MoveRight(page.twoDMoveAmount);
     }
 }

@@ -44,4 +44,16 @@ public class Page
 
     [Header("AR Objects")]
     public ARObjectData[] objectsToSpawn;
-}
+
+    [Header("2D Overlay")]
+    public bool use2DOverlay;
+    public Sprite twoDBackground;
+    public float twoDMoveAmount = 500f;
+    public bool show2DButton;
+
+    [Header("Trout")]
+    public bool showTrout = true;
+    public Vector2 troutPosition;
+    public float troutRotation;
+    public bool flipTrout;
+    }
