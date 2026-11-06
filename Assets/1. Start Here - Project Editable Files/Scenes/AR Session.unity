@@ -9193,6 +9193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Milkweed
       objectReference: {fileID: 0}
+    - target: {fileID: 3279093614907120051, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6024499832130373940, guid: a88aaf6189bd44cbba8c8869121c67cc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.20527
@@ -9290,6 +9294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blackbird
       objectReference: {fileID: 0}
+    - target: {fileID: 3410784497459952717, guid: 7bf6d27b838a54cad9127a3dbe927336, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9347,6 +9355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bee
       objectReference: {fileID: 0}
+    - target: {fileID: 4987957912689421798, guid: c7400f8db423f45f483da7b430f02e03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9363,6 +9375,10 @@ PrefabInstance:
     - target: {fileID: 5822027376423130221, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
       propertyPath: m_Name
       value: Hummingbird
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822027376423130221, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6100508258769594126, guid: 0867a5501361e4e0fa4f505a33b13bb7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9461,6 +9477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heron
       objectReference: {fileID: 0}
+    - target: {fileID: 9173307337139553777, guid: bd97c0a4a79784a1e9b6e2cd75e9ef10, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9477,6 +9497,10 @@ PrefabInstance:
     - target: {fileID: 3105647769000453234, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
       propertyPath: m_Name
       value: Butterfly
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105647769000453234, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3914126480828894993, guid: afcba0ebb08094b47bbc6b0737f84fa3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9535,6 +9559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meadowhawk
       objectReference: {fileID: 0}
+    - target: {fileID: 1921074151604031541, guid: b4b3161b3e4704fbb8e073190bcd2503, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8408945238366534150, guid: b4b3161b3e4704fbb8e073190bcd2503, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.21595
@@ -9592,6 +9620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullfrog
       objectReference: {fileID: 0}
+    - target: {fileID: 1267951208097970301, guid: 553b485ab48c84a30a40a1ad8fa285a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7269671576420889594, guid: 553b485ab48c84a30a40a1ad8fa285a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.2179
@@ -9648,6 +9680,10 @@ PrefabInstance:
     - target: {fileID: 1633233982493379652, guid: 32d3e6e824b9845229689e52af572425, type: 3}
       propertyPath: m_Name
       value: Red Frog
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633233982493379652, guid: 32d3e6e824b9845229689e52af572425, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1720613339319491207, guid: 32d3e6e824b9845229689e52af572425, type: 3}
       propertyPath: m_LocalPosition.x
